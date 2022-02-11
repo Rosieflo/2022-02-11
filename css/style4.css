@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+h1 a img{width: 200px; height: 40px;}
+
+*{margin: 0px; padding:0px;}
+ul, li, ol{list-style: none;}
+body{
+  font-size: 12px;
+  font-family: '나눔 고딕', arial, sans-serif;
+  color: #222328;
+  background-color: #ffffff;
+}
+a{
+  color: #222328;
+  text-decoration: none;
+}
+
+#wrap{
+  width: 1000px;
+  height: 650px;
+  background-color: aqua;
+}
+
+header{
+  width: 200px;
+  height: 650px;
+  background-color: bisque;
+  float: left;
+}
+
+/* 내비게이션 영역 */
+.gnb{}
+.gnb > ul{margin: 10px 10px 0 10px;}
+.gnb > ul > li{text-align: center;}
+.gnb > ul > li > a{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.gnb > ul > li:hover > a{
+  color: #ffffff;
+  background-color: hotpink;
+}
+
+.sub{display: none;}
+.sub > li{}
+.sub > li > a{
+  line-height: 30px;
+}
+.sub > li > a:hover{
+  display: block;
+  color: #ffffff;
+  background-color: forestgreen;
+}
+
+main{
+  width: 800px;
+  height: 550px;
+  background-color: blue;
+  float: left;
+}
+
+/* 이미지 슬라이드 영역 */
+.slide{position: relative;}
+.slide > ul > li{position: absolute;}
+.slide > ul > li:first-child{z-index: 100;}
+.slide > ul > li > h3{
+  width: 240px;
+  position: absolute;
+    left: 50%;
+    top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+.slide > ul > li > img{
+  width: 800px;
+  height: 400px;
+}
+
+footer{
+  width: 800px;
+  height: 100px;
+  background-color: cornflowerblue;
+  float: left;
+}
